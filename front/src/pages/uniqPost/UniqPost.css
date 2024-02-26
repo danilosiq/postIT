@@ -1,0 +1,150 @@
+.uniq {
+    display: flex;
+    justify-content: center;
+}
+
+.uniq .leftCamp {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.uniq .leftCamp .card {
+    flex: 1;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: aliceblue;
+}
+
+.space {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    height: 20%;
+    padding: 1%;
+
+}
+
+.profile img {
+    width: 10%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.uniq .comments{
+    padding: 1%;
+    
+    flex: 2;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.uniq .comment {
+    display: flex;
+    width: 90%;
+    padding: 1%;
+    transition: 160ms ease;
+}
+
+.uniq .comment:hover{
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+
+}
+.inputComment{
+    width: 100%;
+    display: flex;
+    max-height:50% ;
+}
+.inputComment form{
+    display: flex;
+    width: 100%;
+}
+.inputComment textarea{
+    width: 90%;
+    resize: none;
+}
+
+.inputComment button{
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    flex: 1;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 150ms ease;
+}
+
+.inputComment button:hover{
+    background-color: rgb(51, 51, 51);
+  
+}
+
+.changeBTT{
+    margin-top: 1%;
+    width: 10%;
+    padding: 1%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.bottomSpace{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonLike{
+    margin-top: 1%;
+    width: 10%;
+    padding: 1%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.uniq .comment textarea {
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 1.1em;
+}
+
+.uniq .comment img {
+    width: 100px;
+    height: 100px;
+}
+
+.uniq .comment div {
+    flex: 1;
+}
+
+
+.uniq .rightCamp {
+    width: 40%;
+}
+
+.uniq .rightCamp img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+
+    max-height: 600px;
+    object-fit: contain;
+}

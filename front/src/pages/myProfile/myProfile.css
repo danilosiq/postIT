@@ -1,0 +1,77 @@
+.myProfile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myProfile .leftcamp {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+
+.myProfile .leftcamp .card {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myProfile .leftcamp .card textarea{
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 2px solid black;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1%;
+
+}
+
+.myProfile .leftcamp .card img {
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+}
+
+
+
+.myProfile .rightcamp {
+    width: 50%;
+}
+
+.myProfile .EditBTT {
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    width: 200px;
+    font-size: 1.1em;
+    height: 100px;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.myProfile .EditBTT:hover{
+    background-color: rgb(32, 32, 32);
+}
+
+.myProfile .postFormat{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.myProfile .postFormat img{
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+}
+
+
+.myProfile .cardMyposts:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}

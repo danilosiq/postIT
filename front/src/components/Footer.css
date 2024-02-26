@@ -1,0 +1,20 @@
+footer{
+    border-top: 2px solid gray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .right img{
+    width: 100px;
+    object-fit: contain;
+
+}
+

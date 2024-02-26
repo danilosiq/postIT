@@ -1,0 +1,9 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.homeContainer .postscamp{
+    flex: 1;
+}

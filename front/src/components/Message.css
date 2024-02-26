@@ -1,0 +1,25 @@
+.message{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.message.error{
+    background-color: rgb(236, 103, 103);
+    border-color: rgb(199, 23, 23);
+    color: rgb(112, 13, 13);
+    height: 50px;
+    margin-top: 1%;
+
+}
+
+.message.success{
+    background-color: rgb(103, 236, 109);
+    border-color: rgb(23, 199, 23);
+    color: rgb(13, 112, 21);
+    height: 50px;
+    margin-top: 1%;
+
+}

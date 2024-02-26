@@ -1,0 +1,21 @@
+.postCardHome {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.postCardHome img {
+    display: inline-block;    
+    object-fit: cover;
+    width: 100%;
+}
+
+.postCardHome .card {
+    border: 2px solid black;
+    min-width: 200px;
+    max-height: 200px;
+    display: flex;
+    
+    margin: 1%;
+}

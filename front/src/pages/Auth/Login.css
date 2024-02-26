@@ -1,0 +1,62 @@
+.loginContainer{
+    display: flex;
+    height: 700px;
+}
+
+.loginContainer .leftCamp{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.formREGLOG{
+    border: 2px solid black;
+    height: 70%;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.formREGLOG div{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+.inputCamp{
+    border: 2px solid black;
+    width: 90%;
+    padding: 1%;
+}
+
+.loginContainer .rightCamp{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.imgREGLOG{
+    width: 50%;
+    object-fit: contain;
+}
+
+.REGLOGbtt{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.REGLOGbtt:hover{
+    background-color: rgb(32, 32, 32);
+}
