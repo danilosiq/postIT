@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Home.css"
 import { useDispatch, useSelector } from "react-redux";
 import Post from "../../components/Post";
-import { profile } from "../../slices/userSlices";
 import Error404 from "../../components/Error404";
 
 
