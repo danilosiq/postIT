@@ -1,5 +1,5 @@
-export const api = import.meta.env.API_URL;
-export const uploads = import.meta.env.UPLOADS_URL;
+export const api = process.env.API_URL;
+export const uploads = process.env.UPLOADS_URL;
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
