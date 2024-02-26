@@ -21,8 +21,6 @@ import EditPost from "./pages/editPost/EditPost";
 import UniqProfile from "./pages/uniqProfile/UniqProfile";
 import { useSelector } from "react-redux";
 
-
-
 function App() {
   const { auth, loading } = useAuth();
   if (loading) {
