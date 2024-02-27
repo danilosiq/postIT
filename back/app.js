@@ -5,7 +5,7 @@ const path = require("path");
 const cors = require("cors");
 const { log } = require("console");
 
-const port = process.env.PORT;
+const port = "https://post-it-pu2x9xk9c-danilosiq.vercel.app";
 
 const app = express();
 
