@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./UniqProfile.css";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { profile, resetMessage, getUserDetails } from "../../slices/userSlices";
 import { uploads } from "../../utils/config";
@@ -10,6 +10,7 @@ import { getUserPhotos } from "../../slices/photoSlices";
 const UniqProfile = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const {
     user,

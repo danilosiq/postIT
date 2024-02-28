@@ -55,7 +55,7 @@ const Navbar = () => {
     <nav>
       <h1>PostIT</h1>
       <ul>
-        <li>
+        <li className="searchLI">
           <form onSubmit={handleSearch}>
             <BsSearch />
             <input

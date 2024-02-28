@@ -1,5 +1,5 @@
 import React from "react";
-import diabo from "../../public/diabo.png";
+import diabo from "/diabo.png";
 import "./ERRO.css";
 import { logout, reset } from "../slices/authSlices";
 import { useNavigate } from "react-router-dom";

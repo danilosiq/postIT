@@ -167,6 +167,90 @@ const UniqPost = () => {
           )}
         </div>
       </div>
+
+      <div className="uniq_phone_format">
+        
+
+        <div className="leftCamp">
+          {photos && photos.image && (
+            <img src={`${uploads}/photos/${photos.image}`} alt="" />
+          )}
+        </div>
+
+        <div className="rightCamp">
+          <div className="card">
+            <div
+              className="profile"
+              onClick={() => navigate(`/uniqprofile/${user._id}`)}
+            >
+              <img src={`${uploads}/users/${user.userImage}`} alt="" />
+              <h1>{user.name}</h1>
+            </div>
+            <div className="space">
+              <div className="title">
+                <h1>{photos.title}</h1>
+              </div>
+              <div className="comments">
+                <h3>Comentarios:</h3>
+
+                {photos.comments &&
+                  photos.comments.map((comment) => (
+                    <div
+                      key={comment.id}
+                      className="comment"
+                      onClick={() => navigate(`/uniqprofile/${comment.userID}`)}
+                    >
+                      <div>
+                        <p>
+                          <BsFillPersonFill />
+                          {comment.username}
+                        </p>
+                        <hr />
+                        <textarea
+                          name=""
+                          id=""
+                          disabled
+                          value={comment.comment}
+                        ></textarea>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+
+              <div className="inputComment">
+                <form onSubmit={handleComment}>
+                  <textarea
+                    name=""
+                    id=""
+                    value={comment || ""}
+                    placeholder="Deixe seu comentario..."
+                    onChange={(e) => setComment(e.target.value)}
+                  ></textarea>
+                  <button>
+                    <TbSend />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className="bottomSpace">
+            <button onClick={handleLike} className="buttonLike">
+              {" "}
+              {like}
+            </button>
+
+            {original._id === photos.userId && (
+              <button
+                onClick={() => navigate(`/editPost/${photos._id}`)}
+                className="changeBTT"
+              >
+                <BsFillPencilFill />
+              </button>
+            )}
+          </div>
+          {PHOTOerror && <Message type="error" msg={PHOTOerror} />}
+        </div>
+      </div>
     </>
   );
 };

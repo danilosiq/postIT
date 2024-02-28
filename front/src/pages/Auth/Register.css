@@ -22,3 +22,17 @@
     width: 50%;
     object-fit: contain;
 }
+
+@media (width <= 1000px){
+    .RegisterContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .RegisterContainer .rightCamp{
+        width: 90%;
+        height: 80%;
+    }
+    .formREGLOG{
+        width: 90%;
+    }
+}

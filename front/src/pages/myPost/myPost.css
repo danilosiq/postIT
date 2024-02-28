@@ -48,4 +48,24 @@
     font-size: 1.1em;
     cursor: pointer;
 }
+.inputCampIMG{
+    border: 2px solid black;
+    width: 90%;
+    padding: 1%;
+}
 
+@media (width <= 1000px){
+    .myPost{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .myPost .leftCamp{
+        height: 60%;
+        width: 80%;
+    }
+    .inputCampIMG{
+        height: 150px;
+    }    
+}

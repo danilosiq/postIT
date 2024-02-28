@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import Message from "../../components/Message";
+import ui from "/ui.png"
 
 //redux
 import { register, reset } from "../../slices/authSlices";
@@ -48,7 +49,7 @@ const Register = () => {
     <div className="RegisterContainer">
       <div className="leftCamp">
         <img
-          src="https://www.giantbomb.com/a/uploads/square_medium/36/361609/3350774-cbcbea3a-7f1a-49d2-a259-5876131e8a89.png"
+          src={ui}
           alt=""
           className="imgREGLOG"
         />

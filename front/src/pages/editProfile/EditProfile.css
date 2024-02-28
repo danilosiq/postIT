@@ -49,7 +49,8 @@
 }
 .EditContainer .left img{
     width: 50%;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 50%;
 }
 
 
@@ -57,8 +58,10 @@
     .EditContainer{
         flex-direction: column;
         margin-top: 150px;
+        align-items: center;
     }
 
+  
 
     .EditContainer .right{
         width: 90%;

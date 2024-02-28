@@ -3,8 +3,7 @@ import "./myPost.css";
 import { useDispatch, useSelector } from "react-redux";
 import { publish, resetMessage } from "../../slices/photoSlices";
 import Message from "../../components/Message";
-import empy from "../../../public/empy.png"
-import { uploads } from "../../utils/config";
+import empy from "/public/empy.png"
 import { useNavigate } from "react-router-dom";
 
 
@@ -35,7 +34,7 @@ const MyPost = () => {
     setTimeout(() => {
       dispatch(resetMessage());
       navigate(`/myperfil/${original._id}`);
-    }, 2000);
+    }, 1000);
   };
   return (
     <>
@@ -45,7 +44,7 @@ const MyPost = () => {
       {message && <Message type="success" msg={message} />}
       <div className="myPost">
         <div className="leftCamp">
-          <form onSubmit={handlePost}>
+          <form >
             <div>
               <label>
                 Título: <br />
@@ -63,12 +62,13 @@ const MyPost = () => {
                 <br />
                 <input
                   type="file"
-                  className="inputCamp"
+                  className="inputCampIMG"
                   onChange={handleFile}
                 />
               </label>
             </div>
-            <input type="submit" value="POST!" className="POSTbutton" />
+            {loading &&  <input type="submit" value="carregando" className="POSTbutton" disable />}
+            {!loading &&  <input type="submit" value="POST!" className="POSTbutton" onClick={handlePost}/>}
           </form>
         </div>
         <div className="rightCamp">

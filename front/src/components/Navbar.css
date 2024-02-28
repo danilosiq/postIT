@@ -46,3 +46,9 @@ nav li span{
     align-items: center;
     cursor: pointer;
 }
+
+@media (width <= 1000px){
+    .searchLI{
+        display: none;
+    }
+}

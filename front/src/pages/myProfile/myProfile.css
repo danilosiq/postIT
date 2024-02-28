@@ -32,7 +32,7 @@
 
 .myProfile .leftcamp .card img {
     width: 100%;
-    height: 40%;
+    max-height: 30%;
     object-fit: contain;
 }
 
@@ -70,8 +70,32 @@
     object-fit: contain;
 }
 
-
+.myProfile .cardMyposts{
+    border: 2px solid transparent;
+}
 .myProfile .cardMyposts:hover{
     border: 2px solid black;
     cursor: pointer;
+}
+
+
+@media (width <= 700px){
+    .myProfile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myProfile .leftcamp{
+        border: none;
+    }
+
+    .myProfile .leftcamp {
+        width: 90%;
+    }
+    .myProfile .leftcamp .card img{
+        width: 50%;
+    }
+    .myProfile .rightcamp{
+        width: 90%;
+    }
 }

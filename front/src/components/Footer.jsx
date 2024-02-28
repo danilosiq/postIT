@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-import dan from "../../public/dan.png";
+import dan from "/dan.png";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
           <h2>Danilo Dante Siqueira</h2>
           <p>Criador desse projeto!</p>
-          <Link to="https://github.com/danilosiq"> GitHub</Link>
+          <Link to="https://github.com/danilosiq" target="blank"> GitHub</Link>
         </div>
       </div>
     </footer>
